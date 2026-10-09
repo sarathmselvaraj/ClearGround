@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us — ClearGround™ Radon Testing &amp; Mitigation</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/favicon.svg" rel="shortcut icon"/>
+<meta content="Learn about ClearGround's professional approach to radon measurement, active soil depressurization engineering, indoor air quality science, and client-first service philosophy." name="description"/>
+<link href="css/theme.css" rel="stylesheet"/>
+<link href="css/components.css" rel="stylesheet"/>
+<link href="css/layout.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Sticky Glass Navbar (Rule 1, 2, 3, 4) -->
+<header class="site-header" id="site-header">
+<div class="navbar-container">
+<!-- 1. Brand Logo -->
+<a aria-label="ClearGround Home" class="brand-logo" href="index.html">
+<div class="brand-icon-box">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+<circle cx="12" cy="11" r="3"></circle>
+</svg>
+</div>
+<div class="brand-text">Clear<span>Ground</span></div>
+</a>
+<!-- Desktop Navigation Menu (Items 2 - 8) -->
+<nav aria-label="Main Navigation">
+<ul class="nav-menu">
+<!-- 2. Home Dropdown (ONLY dropdown in navbar) -->
+<li class="nav-item">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link" href="index.html" id="nav-link-home">
+              Home
+              <svg class="dropdown-arrow" fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg>
+</a>
+<ul aria-label="Home submenu" class="dropdown-menu" id="home-dropdown-menu">
+<li><a class="dropdown-item" href="index.html">General Radon Services</a></li>
+<li><a class="dropdown-item" href="home-2.html">Real Estate Radon Testing</a></li>
+</ul>
+</li>
+<!-- 3. About Us — Direct Link -->
+<li class="nav-item">
+<a class="nav-link active" href="about.html">About Us</a>
+</li>
+<!-- 4. Services — Direct Link -->
+<li class="nav-item">
+<a class="nav-link" href="services.html">Services</a>
+</li>
+<!-- 5. Blog — Direct Link -->
+<li class="nav-item">
+<a class="nav-link" href="blog.html">Blog</a>
+</li>
+<!-- 6. FAQ — Direct Link -->
+<li class="nav-item">
+<a class="nav-link" href="faq.html">FAQ</a>
+</li>
+<!-- 7. Pricing — Direct Link -->
+<li class="nav-item">
+<a class="nav-link" href="pricing.html">Pricing</a>
+</li>
+<!-- 8. Contact — Direct Link -->
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+</ul>
+</nav>
+<!-- Header Actions (Items 9 - 11) -->
+<div class="header-actions">
+<!-- 9. RTL/LTR Toggle -->
+<button aria-label="Toggle RTL direction" class="btn-icon rtl-toggle-btn" style="font-size: 11px; font-weight: 700; font-family: var(--font-heading);" type="button">RTL</button>
+<!-- 10. Dark/Light Mode Toggle -->
+<button aria-label="Toggle dark/light theme" class="btn-icon theme-toggle-btn" type="button">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path></svg>
+</button>
+<!-- 11. Sign In — Direct Button -->
+<div class="auth-actions-guest">
+<a class="btn-nav-signin" href="login.html" id="nav-signin-btn">
+<span>Sign In</span>
+<svg fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<!-- User Profile Badge (When logged in) -->
+<div class="auth-profile-logged user-profile-badge" style="display: none;">
+<div class="user-avatar-circle">SM</div>
+<span class="user-name-label">Sarah</span>
+<svg fill="none" height="14" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg>
+<ul class="dropdown-menu profile-dropdown-menu">
+<li class="profile-header-item">
+<strong class="user-name-full">Dr. Sarah Mitchell</strong>
+<span class="user-email-full">sarah.m@clearground.io</span>
+</li>
+<li><a class="dropdown-item" href="contact.html">My Inspection Bookings</a></li>
+<li><a class="dropdown-item logout-trigger" href="#" style="color: var(--hazard-action);">Sign Out</a></li>
+</ul>
+</div>
+<!-- Mobile Drawer Toggle -->
+<button aria-expanded="false" aria-label="Open mobile menu" class="mobile-toggle" type="button">
+<svg fill="none" height="26" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="26" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Offcanvas Drawer (Rules 3, 4, 5, 6, 7) -->
+<div class="drawer-backdrop"></div>
+<aside aria-label="Mobile Navigation Drawer" class="mobile-drawer">
+<!-- Group 1: Drawer Header -->
+<div class="drawer-header">
+<a aria-label="ClearGround Home" class="brand-logo" href="index.html">
+<div class="brand-icon-box">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+<circle cx="12" cy="11" r="3"></circle>
+</svg>
+</div>
+<div class="brand-text">Clear<span>Ground</span></div>
+</a>
+<button aria-label="Close menu" class="drawer-close-btn" type="button">
+<svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+</button>
+</div>
+<!-- Scrollable Content -->
+<div class="drawer-content">
+<!-- Group 2: Primary Navigation -->
+<nav aria-label="Mobile Navigation Links" class="drawer-nav">
+<ul class="drawer-links">
+<!-- 1. Home Accordion (Only dropdown) -->
+<li class="drawer-item-has-submenu">
+<button aria-expanded="false" class="drawer-link drawer-submenu-toggle" type="button">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+</span>
+<span class="drawer-link-text">Home</span>
+<svg class="drawer-chevron" fill="none" height="16" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m6 9 6 6 6-6"></path></svg>
+</button>
+<ul class="drawer-submenu">
+<li><a class="drawer-sublink" href="index.html">General Radon Services</a></li>
+<li><a class="drawer-sublink" href="home-2.html">Real Estate Radon Testing</a></li>
+</ul>
+</li>
+<!-- 2. About Us -->
+<li>
+<a class="drawer-link active" href="about.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+</span>
+<span class="drawer-link-text">About Us</span>
+</a>
+</li>
+<!-- 3. Services -->
+<li>
+<a class="drawer-link" href="services.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</span>
+<span class="drawer-link-text">Services</span>
+</a>
+</li>
+<!-- 4. Blog -->
+<li>
+<a class="drawer-link" href="blog.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+</span>
+<span class="drawer-link-text">Blog</span>
+</a>
+</li>
+<!-- 5. FAQ -->
+<li>
+<a class="drawer-link" href="faq.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+</span>
+<span class="drawer-link-text">FAQ</span>
+</a>
+</li>
+<!-- 6. Pricing -->
+<li>
+<a class="drawer-link" href="pricing.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20"></path><path d="17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+</span>
+<span class="drawer-link-text">Pricing</span>
+</a>
+</li>
+<!-- 7. Contact -->
+<li>
+<a class="drawer-link" href="contact.html">
+<span class="drawer-link-icon">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+</span>
+<span class="drawer-link-text">Contact</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Group 3: Preferences (Rule 5) -->
+<div class="drawer-preferences">
+<div class="drawer-pref-grid">
+<button aria-label="Toggle dark/light theme" class="drawer-pref-btn theme-toggle-btn" type="button">
+<span class="pref-icon-box">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path></svg>
+</span>
+<span class="pref-label pref-theme-label">Theme</span>
+</button>
+<button aria-label="Toggle RTL direction" class="drawer-pref-btn rtl-toggle-btn" type="button">
+<span class="pref-icon-box">
+<svg fill="none" height="18" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m8 7 4-4 4 4"></path><path d="M12 3v14"></path><path d="m16 17-4 4-4-4"></path></svg>
+</span>
+<span class="pref-label pref-rtl-label">RTL Layout</span>
+</button>
+</div>
+</div>
+<!-- Group 4: Authentication CTA (Rule 5) -->
+<div class="drawer-auth">
+<!-- Guest State -->
+<div class="auth-actions-guest">
+<a class="drawer-signin-btn" href="login.html">
+<span>Sign In</span>
+<svg fill="none" height="16" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</a>
+</div>
+<!-- Logged-in State -->
+<div class="auth-profile-logged drawer-profile-card" style="display: none;">
+<div class="drawer-profile-info">
+<div class="user-avatar-circle">SM</div>
+<div class="drawer-user-details">
+<strong class="user-name-full">Dr. Sarah Mitchell</strong>
+<span class="user-email-full">sarah.m@clearground.io</span>
+</div>
+</div>
+<a class="btn btn-secondary btn-sm logout-trigger" href="#" style="width: 100%; justify-content: center; margin-top: 10px; color: var(--hazard-action);">
+            Sign Out
+          </a>
+</div>
+</div>
+</div>
+</aside>
+<!-- Page Hero -->
+<section class="page-hero">
+<div class="site-container">
+<span class="badge-pill badge-epa-certified" style="margin-bottom: 12px;">Our Organization &amp; Standards</span>
+<h1 class="inner-h1">Evidence-Based Environmental Protection</h1>
+<p class="text-hero-sub" style="max-width: 680px; margin-inline: auto;">
+        We combine building physics, calibrated diagnostic instrumentation, and architectural precision to eliminate indoor radon risks for homes and commercial facilities.
+      </p>
+<div class="breadcrumbs">
+<a href="index.html">Home</a>
+<span>/</span>
+<span class="current">About Us</span>
+</div>
+</div>
+</section>
+<!-- Our Mission & Professional Approach -->
+<section class="section">
+<div class="site-container">
+<div class="grid grid-split-50-50">
+<div>
+<span class="section-subtitle-tag">Our Company &amp; Philosophy</span>
+<h2 class="section-title">A Scientific Approach to Indoor Air Quality</h2>
+<p style="font-size: 16px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px;">
+            ClearGround was established with a clear mandate: to approach radon measurement and mitigation not as generic handyman work, but as specialized building physics and pressure engineering.
+          </p>
+<p style="font-size: 16px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+            Radon gas cannot be detected by scent, taste, or sight. Because soil gas migration varies with soil density, foundation porosity, and weather patterns, effective solutions require standardized continuous measurement protocols and carefully calculated sub-slab depressurization fields.
+          </p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px;">
+<div style="padding: 18px; background-color: var(--surface-primary); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+<h4 style="color: var(--primary-purple); margin-bottom: 6px;">Our Mission</h4>
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">To provide transparent, defensible radon data and engineered fresh-air solutions that keep indoor air as clean as reasonably achievable.</p>
+</div>
+<div style="padding: 18px; background-color: var(--surface-primary); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
+<h4 style="color: #10B981; margin-bottom: 6px;">Our Standard</h4>
+<p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">Every testing procedure follows established public health and environmental protocols using calibrated continuous digital instruments.</p>
+</div>
+</div>
+</div>
+<div class="image-card">
+<div class="image-card-img-wrap" style="aspect-ratio: 16 / 10;">
+<img alt="ClearGround environmental specialist reviewing diagnostic report with client" loading="lazy" src="assets/images/about/professional-consultation.jpg"/>
+</div>
+<div class="image-card-body">
+<h4 style="margin-bottom: 4px;">Diagnostic Consultation &amp; Analysis</h4>
+<p style="font-size: 13px; color: var(--text-muted);">Walking property owners through hourly radon curves and mitigation engineering.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Operating Principles (Rule 10) -->
+<section class="section" style="background-color: var(--surface-primary);">
+<div class="site-container">
+<div class="section-header">
+<span class="section-subtitle-tag">Our Commitments</span>
+<h2 class="section-title">Core Principles of ClearGround Service</h2>
+<p class="section-desc">
+          How we ensure technical accuracy, clear client communication, and durable structural results on every project.
+        </p>
+</div>
+<div class="grid grid-cols-4">
+<div class="card-glass">
+<div class="brand-icon-box" style="margin-bottom: 16px;">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+</div>
+<h3 style="font-size: 18px; margin-bottom: 8px;">Calibrated Precision</h3>
+<p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">
+            Our continuous digital monitors undergo regular factory calibration to ensure readings remain accurate and dependable.
+          </p>
+</div>
+<div class="card-glass">
+<div class="brand-icon-box" style="margin-bottom: 16px;">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+</div>
+<h3 style="font-size: 18px; margin-bottom: 8px;">Aesthetic Workmanship</h3>
+<p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">
+            Mitigation piping is planned thoughtfully to respect living areas, basement layouts, and exterior home appearance.
+          </p>
+</div>
+<div class="card-glass">
+<div class="brand-icon-box" style="margin-bottom: 16px;">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+</div>
+<h3 style="font-size: 18px; margin-bottom: 8px;">Objective Guidance</h3>
+<p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">
+            We communicate test results straightforwardly and non-alarmingly, clearly separating health guidelines from commercial claims.
+          </p>
+</div>
+<div class="card-glass">
+<div class="brand-icon-box" style="margin-bottom: 16px;">
+<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</div>
+<h3 style="font-size: 18px; margin-bottom: 8px;">Follow-Up Verification</h3>
+<p style="font-size: 14px; color: var(--text-secondary); line-height: 1.5;">
+            We conduct independent post-mitigation testing following system commissioning to verify performance under operating conditions.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team & Field Operations Section -->
+<section class="section">
+<div class="site-container">
+<div class="grid grid-split-50-50" style="align-items: center;">
+<div class="image-card">
+<div class="image-card-img-wrap" style="aspect-ratio: 16 / 10;">
+<img alt="ClearGround environmental field operations specialists" loading="lazy" src="assets/images/about/team-specialists.jpg"/>
+</div>
+<div class="image-card-body">
+<h4 style="margin-bottom: 4px;">Field Operations &amp; Testing Specialists</h4>
+<p style="font-size: 13px; color: var(--text-muted);">Trained in active soil depressurization, continuous monitoring, and pressure field diagnostics.</p>
+</div>
+</div>
+<div>
+<span class="section-subtitle-tag">Our Specialists</span>
+<h2 class="section-title">Dedicated to Measurement Accuracy</h2>
+<p style="font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 16px;">
+            Our field technicians bring hands-on experience in building construction, diagnostic drilling, and mechanical ventilation. We understand how different foundation materials interact with sub-grade gravel, soil clay, and water tables.
+          </p>
+<p style="font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 24px;">
+            Whether placing continuous monitors in residential homes or configuring multi-zone commercial arrays, our team ensures every test is completed according to standardized protocols.
+          </p>
+<a class="btn btn-primary btn-md" href="services.html">Explore Our Services</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="section section-cta" style="background: linear-gradient(135deg, rgba(108, 34, 169, 0.45) 0%, rgba(33, 14, 58, 0.7) 50%, rgba(182, 77, 255, 0.25) 100%); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+<div class="site-container" style="text-align: center; max-width: 800px; margin-inline: auto;">
+<h2 style="font-size: clamp(28px, 4vw, 38px); margin-bottom: 16px;">Have Questions About Radon in Your Area?</h2>
+<p style="font-size: 16px; color: var(--text-hero-sub); margin-bottom: 32px; line-height: 1.6;">
+        Our team is ready to answer questions about testing protocols, closed-house rules, and mitigation options.
+      </p>
+<div class="cta-row" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+<a class="btn btn-primary btn-lg" href="contact.html">Contact ClearGround</a>
+<a class="btn btn-secondary btn-lg" href="tel:18005557236">Call (800) 555-RADON</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="site-container">
+<div class="footer-top footer-top-five">
+<div class="footer-brand-column">
+<a aria-label="ClearGround Home" class="brand-logo" href="index.html">
+<div class="brand-icon-box">
+<svg fill="none" height="22" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+</div>
+<div class="brand-text">Clear<span>Ground</span></div>
+</a>
+<p class="footer-brand-copy">Certified radon testing, mitigation, verification, and property-ready reporting for healthier indoor spaces.</p>
+<div aria-label="ClearGround social links" class="footer-socials">
+<a aria-label="Facebook" class="footer-social-btn" href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.8 22v-8.8h3l.45-3.45H13.8V7.55c0-1 .28-1.68 1.72-1.68H17.4V2.8c-.32-.04-1.43-.14-2.72-.14-2.7 0-4.55 1.65-4.55 4.67v2.42H7.08v3.45h3.05V22h3.67Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="Instagram" class="footer-social-btn" href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.18 2A3.02 3.02 0 0 0 4 7.02v9.96A3.02 3.02 0 0 0 7.02 20h9.96A3.02 3.02 0 0 0 20 16.98V7.02A3.02 3.02 0 0 0 16.98 4H7.02ZM17.35 5.5a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7.05A4.95 4.95 0 1 1 7.05 12 4.95 4.95 0 0 1 12 7.05Zm0 2A2.95 2.95 0 1 0 14.95 12 2.95 2.95 0 0 0 12 9.05Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="X" class="footer-social-btn" href="https://x.com/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-6.39L6.48 22H3.36l7.25-8.29L2.96 2H9.36l4.42 5.84L18.9 2Zm-1.1 17.84h1.72L8.42 4.05H6.57L17.8 19.84Z" fill="currentColor"></path></svg>
+</a>
+<a aria-label="LinkedIn" class="footer-social-btn" href="https://www.linkedin.com/" rel="noopener noreferrer" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6.5 8.2H3.3V21h3.2V8.2ZM4.9 3A1.9 1.9 0 1 0 4.9 6.8 1.9 1.9 0 0 0 4.9 3Zm16.1 10.65C21 9.8 18.95 8 16.2 8a4.12 4.12 0 0 0-3.7 2.03V8.2H9.3V21h3.2v-6.34c0-1.67.32-3.29 2.39-3.29 2.04 0 2.06 1.91 2.06 3.4V21H21v-7.35Z" fill="currentColor"></path></svg>
+</a>
+</div>
+</div>
+<div class="footer-nav-column">
+<h4 class="footer-col-title">Navigation</h4>
+<ul class="footer-links-list">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="footer-resources-column">
+<h4 class="footer-col-title">Explore</h4>
+<ul class="footer-links-list">
+<li><a href="pricing.html">Pricing</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="radon-guide.html">Radon Guide</a></li>
+<li><a href="privacy.html">Privacy</a></li>
+<li><a href="terms.html">Terms</a></li>
+</ul>
+</div>
+<div class="footer-services-column">
+<h4 class="footer-col-title">Services</h4>
+<ul class="footer-links-list">
+<li><a href="service-details.html?service=short-term">48-Hr Digital Testing</a></li>
+<li><a href="service-details.html?service=mitigation">Radon Mitigation</a></li>
+<li><a href="service-details.html?service=verification">Post-Mitigation Check</a></li>
+<li><a href="service-details.html?service=commercial">Commercial Testing</a></li>
+</ul>
+</div>
+<div class="footer-stay-column">
+<h4 class="footer-col-title">Stay in Touch</h4>
+<p class="footer-stay-copy">Questions, bookings, or property deadlines? Reach our ClearGround team directly.</p>
+<a class="footer-contact-email" href="mailto:info@clearground.io">info@clearground.io</a>
+<a class="footer-stay-btn" href="mailto:info@clearground.io?subject=ClearGround%20Website%20Enquiry">
+<svg fill="none" height="17" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="17" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+<span>Stay in Touch</span>
+</a>
+</div>
+</div>
+<div class="footer-bottom">
+<div>© 2026 ClearGround™ Radon Testing &amp; Mitigation. All rights reserved.</div>
+<div class="footer-bottom-links">
+<a href="mailto:info@clearground.io">Email Us</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Service</a>
+<a href="login.html">Sign In</a>
+</div>
+</div>
+</div>
+</footer>
+<script src="js/theme.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

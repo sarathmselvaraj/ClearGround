@@ -1,0 +1,24 @@
+ClearGround — Final QA Checklist
+
+Implemented:
+- Home 1 premium responsive hero: desktop/tablet/mobile CTA, trust strip and image alignment.
+- Home 2 split hero: desktop/tablet/mobile content, CTA, highlights and inspection image alignment.
+- FAQ compact accordions now styled and functional on Home 1, Home 2 and Service Details.
+- Full FAQ page accordion, live search and category filter logic verified in source.
+- Light-mode body/muted text darkened; dark-mode supporting text brightened.
+- Dark-gradient overlay cards and final CTA sections use explicit readable foreground colors.
+- Profile dropdown width, text wrapping, item alignment and click behavior corrected.
+- Pricing cards use consistent title/subtitle/price/features/button rows on desktop.
+- Footer contrast and link visibility improved in dark and light themes.
+- Responsive rules added for 1024, tablet, mobile and small phone layouts.
+
+Automated/static checks:
+- JavaScript syntax: PASS
+- CSS brace balance: PASS
+- Local HTML/CSS/JS/image references: 0 missing
+- Duplicate HTML IDs: 0
+- Missing image alt attributes: 0
+- Buttons without type attribute: 0
+- All 19 HTML pages served locally with HTTP 200
+
+Note: Chromium screenshot automation in this environment is blocked/hangs on DBus, so no claim is made for automated visual screenshot comparison. Source, layout rules, references, and functionality wiring were checked directly.
