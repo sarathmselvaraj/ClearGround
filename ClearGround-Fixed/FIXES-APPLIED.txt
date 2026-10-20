@@ -1,0 +1,31 @@
+ClearGround — Website Fixes & Quality Checks (20 October 2026)
+
+1. Branding and Logo
+   - All navigation, mobile drawer, footer, auth, dashboard and utility page logos use the same shield-circle mark and ClearGround name.
+   - Updated favicon to match; renamed leftover RadonShield references, including the subscribe confirmation.
+
+2. About Us — Light Theme Contrast
+   - Corrected leadership title and specialty label colors for readable light and dark themes.
+   - Improved the Our Standard accent contrast on pastel/light surfaces.
+
+3. Service Images
+   - Six service listing images now display uncropped with original aspect ratio (1376 x 768); card boundaries remain aligned.
+   - Service details media use the same full-image treatment.
+
+4. Blog Search
+   - Fixed mismatched search element ID; live multi-word keyword search now works.
+   - Search and category filters combine correctly; accurate no-result message and result count.
+   - Active category appearance and accessible aria-pressed states follow the selected filter.
+
+Quality Verification
+   - Tested live JavaScript filtering in an isolated Chromium browser environment.
+   - Checked 24 HTML pages for missing local resources and inconsistent wordmarks/icons (none found).
+   - Checked main pages at 375 px, 768 px and 1366 px (no page-wide horizontal overflow).
+   - Verified service images load and have native proportions with object-fit: contain.
+   - Checked JavaScript file syntax and About text styles in light and dark themes.
+
+Run
+   Extract ZIP and open ClearGround-Fixed/index.html in a browser. For standard
+   browser routing and consistent asset loading, run a local static web server.
+   This package is a static front-end template; features requiring a backend
+   (such as actually sending emails or saving records) require server integration.

@@ -1,0 +1,20 @@
+ClearGround Radon — Final Fix Verification
+Date: 2026-10-08
+
+Completed:
+- Removed Click to Auto-Fill Demo Credentials control and default prefilled login values.
+- Google and Apple buttons now show a premium successful sign-in popup and establish the demo signed-in state.
+- Service Details > Service Specific Questions forced into a styled accordion; first question opens by default and other answers stay collapsed.
+- Contact form two-column field groups stack safely on small screens.
+- Contact email addresses are clickable.
+- Footer redesigned to be more compact and premium with reduced padding/gaps.
+- Added clickable email access in footer areas, including an Email Us link in footer bottom navigation.
+- Privacy and Terms footer links point to the actual local pages instead of # placeholders where applicable.
+- Reduced unnecessary bottom whitespace before the footer on inner pages.
+
+Verification:
+- HTML parsing: PASS
+- Local image/CSS/JS asset references: PASS
+- External JS syntax (Node --check): PASS
+- Inline JavaScript syntax: PASS
+- CSS brace balance: PASS

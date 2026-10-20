@@ -1,0 +1,10 @@
+CLEARGROUND - BOOK A SERVICE + CALENDAR UPDATE (OCT 20, 2026)
+
+1. Added a real calendar icon button. It invokes the native date picker via showPicker() on direct click (with focus/click fallback). Date input remains editable.
+2. Updated all public navbar calls to action (desktop and mobile) from Sign In to Book a Service, navigating to contact.html#booking-form.
+3. Removed demo Sign In, Sign Up and logged-in profile controls and auth scripts from the public pages. Removed login.html, register.html and js/auth.js.
+4. Replaced the old footer Sign In links with Book a Service where present.
+5. Existing standalone dashboard mockup remains accessible by its own URL, but has no login backend and is not linked from the public site. It must not be used for sensitive data.
+6. Preserved previous v2 image-layout, light-mode contrast and booking validation improvements.
+
+IMPORTANT: The contact booking form is still a front-end-only demo: a valid form displays a validation notice, not a confirmed or transmitted appointment. Connect a server/API to receive real bookings.
