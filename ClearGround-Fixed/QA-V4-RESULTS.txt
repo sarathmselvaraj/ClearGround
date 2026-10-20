@@ -1,0 +1,37 @@
+CLEAR GROUND — V4 FRONT-END QUALITY REPORT
+Updated: October 20, 2026
+
+REQUESTED FIXES
+1. Service Details CTA now carries the selected service in a URL query plus #booking-form anchor.
+   Contact safely reads that value and matches one of the available service options.
+2. Preferred Date is required; native date control has a local-today minimum;
+   JavaScript blocks blank, malformed, and past appointments.
+3. Required Property Address field added (separate from optional access instructions).
+4. Light theme small-label and status colors improved: primary purple #68299A,
+   semantic dark-green #047857. On white these measure approx 8.85:1 and 5.48:1.
+5. Contact form two-column groups stack cleanly on narrow screens, including the date button.
+6. Responsive grid/min-width fixes across service cards, FAQ, articles and Contact layout.
+7. Mobile drawer keyboard focus containment and Escape dismissal; tablet nav breakpoint repaired.
+8. Fixed narrow 320px overflow on long-term testing blog detail page.
+9. FAQ accordion headings now accessible buttons with aria-expanded.
+10. Newsletter text no longer falsely says a real subscription was created.
+
+BROWSER-RENDERED CHECKS
+- Main 9 pages checked at 320, 390, 768, 1024, 1440px (45 viewport tests): no document overflow.
+- All 21 public HTML pages checked at 320, 390, 1024px: no document overflow.
+- Contact: URL service prefill, 6 required field validation, bad dates rejected,
+  invalid email rejected, phone alphabet sanitation, valid demo confirmation, calendar-button activation.
+- Mobile menu: open/close, Home submenu, Escape, focus trap, theme switch.
+- FAQ: keyboard accordion and live search.
+- Blog: text search, filters and empty state.
+- Pricing: mobile pricing toggle.
+- Service Details: booking CTA includes the correct service ID.
+- JavaScript syntax checked using Node; internal link checks performed.
+
+LIMITS
+- This project remains a STATIC DEMO. Contact validation does NOT send a booking;
+  newsletter forms do NOT send subscriptions. Connect a backend and validate server-side
+  for any real-world use.
+- Browser tests used Chromium with actual HTML, CSS, JS and image assets injected
+  into a browser page; the environment prevented direct file:// or localhost browsing.
+- Native OS calendar popup visibility must still be confirmed in your Windows/mobile browser.
